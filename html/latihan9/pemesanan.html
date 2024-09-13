@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pemesanan</title>
+  </head>
+  <body>
+    <a href="index.html">< Kembali ke Halaman Utama</a><br />
+    <a href="produk.html">> List Produk</a><br />
+    <h1>Form Pemesanan Produk</h1>
+    <form action="" method="post">
+      <table>
+        <tr>
+          <td><label for="nama">Nama</label></td>
+          <td>
+            <input
+              type="text"
+              id="nama"
+              name="nama"
+              placeholder="Masukkan nama Anda"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="email">Alamat Email</label></td>
+          <td>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Masukkan alamat email Anda"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="jenis_produk">Jenis Produk</label>
+          </td>
+          <td>
+            <select id="jenis_produk" name="jenis_produk" required>
+              <option value="" selected disabled>Pilih Jenis Produk</option>
+              <option value="produk1">Produk 1</option>
+              <option value="produk2">Produk 2</option>
+              <option value="produk3">Produk 3</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="jumlah">Jumlah</label></td>
+          <td>
+            <input
+              type="number"
+              id="jumlah"
+              name="jumlah"
+              placeholder="Masukkan jumlah produk"
+              min="1"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="pengiriman_ekspres">Pengiriman Ekspres</label>
+          </td>
+          <td>
+            <input
+              type="checkbox"
+              id="pengiriman_ekspres"
+              name="pengiriman_ekspres"
+              value="1"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="komentar">Komentar</label>
+          </td>
+          <td>
+            <textarea
+              id="komentar"
+              name="komentar"
+              placeholder="Masukkan komentar atau instruksi khusus"
+            ></textarea>
+          </td>
+        </tr>
+      </table>
+
+      <input type="submit" value="Pesan" />
+      <input type="reset" value="Batal" />
+    </form>
+  </body>
+</html>

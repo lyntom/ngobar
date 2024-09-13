@@ -1,0 +1,202 @@
+/* Gaya dasar */
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  h1, h2, h3 {
+    font-weight: bold;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  a:hover {
+    color: #d00;
+  }
+  
+  /* Header */
+  
+  header {
+    background-color: #f5f5f5;
+  }
+  
+  header h1 {
+    font-size: 24px;
+  }
+  
+  header nav {
+    float: right;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  header nav li {
+    margin-right: 20px;
+  }
+  
+  header nav a {
+    font-size: 16px;
+  }
+  
+  /* Hero */
+  
+  .hero {
+    background-image: url(images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .hero-text h2 {
+    font-size: 48px;
+  }
+  
+  .hero-text p {
+    font-size: 18px;
+  }
+  
+  .hero-text a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d00;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Produk */
+  
+  .products {
+    margin-top: 50px;
+  }
+  
+  .products h2 {
+    font-size: 36px;
+  }
+  
+  .products ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .products li {
+    width: 25%;
+    margin: 10px;
+  }
+  
+  .products li img {
+    width: 100%;
+  }
+  
+  .products li h3 {
+    font-size: 18px;
+  }
+  
+  .products li p {
+    font-size: 14px;
+  }
+  
+  .products li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d00;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Keranjang Belanja */
+  
+  .cart {
+    margin-top: 50px;
+  }
+  
+  .cart h2 {
+    font-size: 36px;
+  }
+  
+  .cart ul {
+    list-style-type: none;
+  }
+  
+  .cart li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .cart li span:nth-child(1) {
+    width: 50%;
+  }
+  
+  .cart li span:nth-child(2) {
+    width: 20%;
+    text-align: center;
+  }
+  
+  .cart li span:nth-child(3) {
+    width: 30%;
+    text-align: right;
+  }
+  
+  .cart-total {
+    margin-top: 20px;
+  }
+  
+  .cart-total span:nth-child(1) {
+    font-weight: bold;
+  }
+  
+  .cart-total span:nth-child(2) {
+    float: right;
+  }
+  
+  /* Pelacakan Pesanan */
+  
+  .order-tracking {
+    margin-top: 50px;
+  }
+  
+  .order-tracking h2 {
+    font-size: 36px;
+  }
+  
+  .order-tracking form {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .order-tracking label {
+    margin-right: 10px;
+  }
+  
+  .order-tracking input {
+    padding: 10px;
+  }
+  
+  /* Footer */
+  
+  footer {
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  
+  footer p {
+    font-size: 12px;
+    text-align: center;
+  }
+  

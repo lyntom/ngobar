@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="index.html" method="post">
+      <label for="nama">Nama</label>
+      <input
+        type="text"
+        id="nama"
+        name="nama"
+        placeholder="Masukkan Nama Anda"
+        autofocus
+        required
+      /><br /><br />
+
+      <label for="nama1">Nama Terisi</label>
+      <input
+        type="text"
+        id="nama1"
+        name="nama1"
+        placeholder="Masukkan Nama Anda"
+        value="Udin"
+        required
+      /><br /><br />
+
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Masukkan Password Anda"
+        required
+      /><br /><br />
+
+      <label for="password1">Password Terisi</label>
+      <input
+        type="password"
+        id="password1"
+        name="password1"
+        placeholder="Masukkan Password Anda"
+        value="password"
+        required
+      /><br /><br />
+
+      <label for="usia">Usia</label>
+      <input
+        type="number"
+        id="usia"
+        name="usia"
+        placeholder="Masukkan Usia Anda"
+        min="15"
+        max="60"
+        size="30"
+        required
+      /><br /><br />
+
+      <label for="usia1">Usia Terisi</label>
+      <input
+        type="number"
+        id="usia1"
+        name="usia1"
+        placeholder="Masukkan Usia Anda"
+        min="15"
+        max="60"
+        value="30"
+        size="30"
+        required
+      /><br /><br />
+
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Masukkan Email Anda"
+        required
+      /><br /><br />
+
+      <label for="email1">Email Terisi</label>
+      <input
+        type="email"
+        id="email1"
+        name="email1"
+        placeholder="Masukkan Email Anda"
+        value="aw@gmail.com"
+        required
+      /><br /><br />
+
+      <input type="hidden" name="id_user" value="123" />
+
+      <label for="tanggal_lahir">Tanggal Lahir</label>
+      <input
+        type="date"
+        id="tanggal_lahir"
+        name="tanggal_lahir"
+        min="2000-01-01"
+        max="2024-08-19"
+        required
+      /><br /><br />
+
+      <label for="tanggal_lahir1">Tanggal Lahir</label>
+      <input
+        type="date"
+        id="tanggal_lahir1"
+        name="tanggal_lahir1"
+        min="2000-01-01"
+        max="2024-08-19"
+        value="2024-08-18"
+        required
+      /><br /><br />
+
+      <label for="waktu_selesai">Waktu Selesai</label>
+      <input
+        type="time"
+        id="waktu_selesai"
+        name="waktu_selesai"
+        min="09:00"
+        max="17:00"
+        required
+      /><br /><br />
+
+      <label for="waktu_selesai1">Waktu Selesai Terisi</label>
+      <input
+        type="time"
+        id="waktu_selesai1"
+        name="waktu_selesai1"
+        min="09:00"
+        max="17:00"
+        value="12:00"
+        required
+      /><br /><br />
+
+      <label for="lampiran">Lampiran</label>
+      <input
+        type="file"
+        id="lampiran"
+        name="lampiran"
+        multiple
+        accept="image/*"
+        required
+      /><br /><br />
+
+      <input type="checkbox" name="hobi" value="membaca" checked /> Membaca
+      <input type="checkbox" name="hobi" value="menulis" /> Menulis
+      <input type="checkbox" name="hobi" value="memasak" disabled /> Memasak
+      <br /><br />
+
+      <input type="radio" name="hobi1" value="membaca" checked /> Membaca
+      <input type="radio" name="hobi1" value="menulis" /> Menulis
+      <input type="radio" name="hobi1" value="memasak" disabled /> Memasak
+      <br /><br />
+
+      <label for="negara">Negara</label>
+      <select name="negara" id="negara">
+        <option value="" disabled>Pilih Negara</option>
+        <option value="indonesia" selected>Indonesia</option>
+        <option value="malaysia">Malaysia</option>
+        <option value="singapura">Singapura</option>
+      </select>
+      <br /><br />
+
+      <label for="negara1">Pilih Negara</label>
+      <select name="negara1" id="negara1" multiple size="2">
+        <option value="" disabled>Pilih Negara</option>
+        <option value="indonesia" selected>Indonesia</option>
+        <option value="malaysia">Malaysia</option>
+        <option value="singapura">Singapura</option>
+      </select>
+      <br /><br />
+
+      <label for="komentar">Komentar</label>
+      <textarea
+        name="komentar"
+        id="komentar"
+        placeholder="Isi Komentar Anda"
+        rows="5"
+        cols="30"
+        required
+      ></textarea>
+      <br /><br />
+
+      <label for="komentar1">Komentar Terisi</label>
+      <textarea
+        name="komentar1"
+        id="komentar1"
+        placeholder="Isi Komentar Anda"
+        rows="5"
+        cols="30"
+        required
+      >
+      ini komentar
+    </textarea
+      >
+      <br /><br />
+
+      <button type="submit">Kirim</button>
+      <button type="reset" disabled>Reset</button>
+    </form>
+  </body>
+</html>
