@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-index</title>
+    <style>
+      .gambar1 {
+        top: 70px;
+        left: 70px;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        z-index: 1;
+      }
+
+      .gambar2 {
+        top: 70px;
+        left: 280px;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        z-index: 2;
+      }
+
+      .gambar3 {
+        top: 70px;
+        left: 500px;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        z-index: 2;
+      }
+
+      .gambar3-1 {
+        width: 100px;
+        height: 100px;
+        z-index: 4;
+      }
+
+      .gambar3-2 {
+        width: 100px;
+        height: 100px;
+        z-index: 4;
+      }
+
+      .gambar3-3 {
+        width: 100px;
+        height: 100px;
+        z-index: 4;
+      }
+
+      .gambar3-4 {
+        top: 8px;
+        left: 560px;
+        width: 100px;
+        height: 100px;
+        z-index: 3;
+      }
+
+      .image-container {
+        display: flex;
+      }
+
+      .image-container img {
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="image-container">
+        <img src="img/box2.jpg" alt="kotak" />
+        <img src="img/box3.jpg" alt="kotak" />
+
+        <img class="gambar1" src="img/box1.jpg" alt="kotak" />
+
+        <img class="gambar3-2" src="img/box2.jpg" alt="kotak" />
+        <img src="img/box3.jpg" alt="kotak" />
+
+        <img class="gambar2" src="img/box1.jpg" alt="kotak" />
+
+        <img src="img/box2.jpg" alt="kotak" />
+        <img class="gambar3-4" src="img/box3.jpg" alt="kotak" />
+
+        <img class="gambar3" src="img/box1.jpg" alt="kotak" />
+      </div>
+      <div class="image-container">
+        <img class="gambar3-1" src="img/box2.jpg" alt="kotak" />
+        <img src="img/box3.jpg" alt="kotak" />
+
+        <img src="img/box2.jpg" alt="kotak" />
+        <img class="gambar3-3" src="img/box3.jpg" alt="kotak" />
+
+        <img src="img/box2.jpg" alt="kotak" />
+        <img src="img/box3.jpg" alt="kotak" />
+      </div>
+    </div>
+  </body>
+</html>

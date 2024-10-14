@@ -1,0 +1,32 @@
+.static {
+    position: static;
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+
+.relative {
+    position: relative;
+    background-color: green;
+    color: white;
+    top: 20px;
+    right: 10px;
+    padding: 10px;
+}
+
+.absolute {
+    position: absolute;
+    background-color: blue;
+    color: white;
+    top: 100px;
+    left: 150px;
+    padding: 10px;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: yellow;
+    padding: 10px;
+}

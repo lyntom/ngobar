@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      body {
+        background-color: blueviolet;
+      }
+
+      .judul {
+        text-align: center;
+        color: tomato;
+        background-color: antiquewhite;
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      .product-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .product-item {
+        flex: 1;
+        background-color: antiquewhite;
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 10px;
+      }
+
+      .product-item img {
+        width: 100%;
+      }
+
+      .product-item p {
+        background-color: tomato;
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 18px;
+        color: white;
+        text-align: center;
+        padding: 5px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="judul">Galeri Produk</h1>
+
+    <div class="product-gallery">
+      <div class="product-item">
+        <img src="img/hp.webp" alt="Baju" />
+        <p>Handphone</p>
+      </div>
+
+      <div class="product-item">
+        <img src="img/sepatu.webp" alt="Baju" />
+        <p>Sepatu</p>
+      </div>
+      <div class="product-item">
+        <img src="img/baju.webp" alt="Baju" />
+        <p>Baju</p>
+      </div>
+      <div class="product-item">
+        <img src="img/laptop.webp" alt="Baju" />
+        <p>Laptop</p>
+      </div>
+      <div class="product-item">
+        <img src="img/elektronik.webp" alt="Baju" />
+        <p>Elektronik</p>
+      </div>
+    </div>
+  </body>
+</html>

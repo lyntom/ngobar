@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-Index</title>
+    <style>
+      body {
+        background-color: aliceblue;
+      }
+
+      .kotak1 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        color: white;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        z-index: 0;
+      }
+
+      .kotak2 {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        color: white;
+        position: absolute;
+        top: 120px;
+        left: 100px;
+        z-index: 2;
+      }
+
+      .kotak3 {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        position: absolute;
+        color: white;
+        top: 80px;
+        left: 70px;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kotak1">Kotak 1</div>
+    <div class="kotak2">Kotak 2</div>
+    <div class="kotak3">Kotak 3</div>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+p {
+    color: red;
+    font-size: 18px;
+}
+
+.teks1 {
+    color: blue;
+    font-size: 24px;
+}
+
+#teks2 {
+    color: green;
+    font-size: 36px;
+}
+
+p.berita {
+    color: burlywood;
+}
+
+p.berita:hover {
+    color: black;
+}
+
+div#konten p {
+    color: black;
+    font-size: 18px;
+}
+
+.p2 {
+    color: black;
+    font-size: 18px;
+}
+
+.p2::first-line {
+    color: darkblue;
+    font-weight: bold;
+}

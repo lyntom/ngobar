@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Berita</title>
+    <style>
+      /* tambahan gaya CSS */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+      }
+
+      .header {
+        position: static;
+        background-color: #f8e71c;
+        color: black;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .navigation {
+        position: relative;
+        top: 0px;
+        background-color: #444;
+        padding: 10px;
+        text-align: center;
+        height: 50px;
+      }
+
+      .main-content {
+        position: absolute;
+        top: 140px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background-color: #fff;
+        padding: 20px;
+        width: 80%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+
+      .sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: orange;
+        color: black;
+        padding: 20px;
+        width: 200px;
+        height: 100vh;
+        /* overflow-y: auto; */
+      }
+
+      /* tambahan gaya CSS untuk isi */
+      .header h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .navigation ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .navigation li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      .navigation a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .main-content h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+      }
+
+      .content-header {
+        display: flex;
+        align-items: center;
+        background-color: #b0f8ff;
+        border-radius: 10px;
+        padding: 5px;
+        padding-left: 15px;
+      }
+
+      .button-selengkapnya {
+        background-color: #ff4b2b;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        margin-left: 870px;
+        font-weight: bold;
+      }
+
+      .main-content p {
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+
+      .article {
+        border-bottom: 1px solid #ccc;
+        margin-top: 20px;
+        padding: 10px;
+        padding-left: 25px;
+        background-color: #b4f8ff;
+        border-radius: 10px;
+      }
+
+      .article h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      .article img {
+        width: 50%;
+        height: auto;
+        margin: 10px auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .article p {
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+
+      .sidebar h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: black;
+        text-decoration: underline;
+        font-weight: bold;
+      }
+
+      .sidebar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .sidebar li {
+        margin-bottom: 10px;
+      }
+
+      .sidebar a {
+        color: darkmagenta;
+        text-decoration: none;
+      }
+
+      .article .kategori-nama {
+        font-weight: bold;
+        color: white;
+        background-color: #da1515;
+        padding: 5px;
+        border-radius: 5px;
+      }
+
+      .article .penulis,
+      .article .tanggal {
+        font-size: 14px;
+        color: #666;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>ニュース (Nyūsu)</h1>
+    </div>
+    <div class="navigation">
+      <ul>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Games</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Review</a></li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <div class="content-header">
+        <h2>Berita Hari Ini</h2>
+        <button class="button-selengkapnya">Lihat Semua</button>
+      </div>
+
+      <div class="article">
+        <h3>7 Acara Seru yang Bisa Kamu Ikuti di Tokyo Bulan Ini!</h3>
+        <img src="img/bake-neko-festival.jpg" alt="Gambar" />
+        <p class="kategori">
+          <span class="kategori-nama">Japan Travel</span>
+        </p>
+        <p>
+          Oleh: <span class="penulis">Anindita Rahardini</span> | Tanggal:
+          <span class="tanggal">7 Oktober 2024</span>
+        </p>
+      </div>
+      <div class="article">
+        <h3>
+          Honolu Grande Kyoto, Surganya Kuliner Jepang Halal untuk Wisatawan
+          Muslim
+        </h3>
+        <img src="img/kuliner-halal-jepang.jpg" alt="Gambar" />
+        <p class="kategori">
+          <span class="kategori-nama">Halal in Japan</span>
+        </p>
+        <p>
+          Oleh: <span class="penulis">Anindita Rahardini</span> | Tanggal:
+          <span class="tanggal">7 Oktober 2024</span>
+        </p>
+      </div>
+      <div class="article">
+        <h3>Hideaki Anno Umumkan Anime Space Battleship Yamato yang Baru</h3>
+        <img src="img/anime-space-battleship-yamato.jpg" alt="Gambar" />
+        <p class="kategori">
+          <span class="kategori-nama">Anime Manga</span>
+        </p>
+        <p>
+          Oleh: <span class="penulis">Frederiz</span> | Tanggal:
+          <span class="tanggal">7 Oktober 2024</span>
+        </p>
+      </div>
+    </div>
+    <div class="sidebar">
+      <h3>Hot Topics</h3>
+      <ul>
+        <li><a href="#">Tempat Destinasi Wisata Di Jepang</a></li>
+        <li><a href="#">Place To Go Japan</a></li>
+        <li><a href="#">Sakura 2024</a></li>
+      </ul>
+      <h3>Berita Terpopuler</h3>
+      <ul>
+        <li>
+          <a href="#"
+            >Hideaki Anno Umumkan Anime Space Battleship Yamato yang Baru</a
+          >
+        </li>
+        <li>
+          <a href="#">7 Acara Seru yang Bisa Kamu Ikuti di Tokyo Bulan Ini!</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

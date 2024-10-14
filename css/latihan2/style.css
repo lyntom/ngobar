@@ -1,0 +1,86 @@
+body {
+    font-family: sans-serif;
+    background-color: lightgray;
+}
+
+#header {
+    text-align: center;
+    border-radius: 10px;
+}
+
+#header h1 {
+    color: red;
+    text-shadow: 2px 2px 1px rgb(255, 255, 255);
+}
+
+#header .penting {
+    color: blue;
+}
+
+#body {
+    background-color: pink;
+    border-radius: 5px;
+}
+
+#body img,
+#body .list {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#body img {
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+}
+
+ul {
+    font-size: 25px;
+}
+
+#body .li-aku {
+    color: blue;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#body .li-kamu {
+    color: red;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#body .span-aku {
+    color: red;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgb(255, 255, 255);
+}
+
+#body .span-kamu {
+    color: blue;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px rgb(255, 255, 255);
+}
+
+#body .span-aku:hover {
+    color: green;
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+}
+
+#body .span-kamu:hover {
+    color: yellow;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+@media (max-width: 768px) {
+    #body img {
+        width: 100%;
+    }
+}
+
+.footer {
+    text-align: center;
+    color: black;
+    background-color: #f0c239;
+    border-radius: 5px;
+}

@@ -1,0 +1,40 @@
+body {
+    background-color: lightblue;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: darkcyan;
+}
+
+.kolom-atas {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+}
+
+.kolom-kiri {
+    width: 60%;
+    background-color: chocolate;
+    padding: 20px;
+    float: left;
+    text-align: justify;
+}
+
+.kolom-kanan {
+    width: 40%;
+    background-color: #f0f0f0;
+    margin-left: 20px;
+    float: right;
+    text-align: right;
+}
+
+.kolom-bawah {
+    clear: both;
+    padding: 5px;
+    text-align: center;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+}
